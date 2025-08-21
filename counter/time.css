@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.inputs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+input[type="date"],
+input[type="time"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.countdown {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.time-unit {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  min-width: 80px;
+}
+.time-unit span {
+  display: block;
+}
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffcc;
+}
+.label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #00ffcc;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #00cc99;
+}
+@media (max-width: 500px) {
+  .time-unit {
+    padding: 0.8rem;
+  }
+
+  .number {
+    font-size: 1.5rem;
+  }
+}
